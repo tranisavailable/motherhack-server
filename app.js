@@ -68,9 +68,7 @@ app.put("/meals/:id", async function (req, res) {
 
   meal.meal_name = mealName;
 
-  res.status(200).send({
-    meal: meal,
-  });
+  res.status(200).send(meal);
 });
 
 app.listen(port, hostname, () =>
